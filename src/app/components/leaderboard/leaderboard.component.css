@@ -1,0 +1,75 @@
+.leaderboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.leaderboard {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.leaderboard h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.leaderboard-th,
+.leaderboard-td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.leaderboard-th {
+    background-color: #6c757d;
+    color: #fff;
+    font-weight: bold;
+}
+
+.leaderboard-tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.leaderboard-tr:hover {
+    background-color: #f1f1f1;
+}
+
+.leaderboard-td {
+    color: #555;
+}
+
+/* Dark mode styles */
+body.dark-mode .leaderboard {
+    background-color: #3e3e3e;
+    color: #ffffff;
+}
+
+body.dark-mode .leaderboard-th {
+    background-color: #444;
+}
+
+body.dark-mode .leaderboard-tr:nth-child(even) {
+    background-color: #555;
+}
+
+body.dark-mode .leaderboard-td {
+    color: #fff;
+}
